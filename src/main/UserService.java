@@ -7,7 +7,7 @@ public class UserService {
             user.getProfile()
                 .getAddress()
                 .getStreet()
-                .trim();    // <-- NPE occurs here if ANY object is null
+s = (user.getProfile() != null && user.getProfile().getAddress() != null && user.getProfile().getAddress().getStreet() != null) ? user.getProfile().getAddress().getStreet().trim() : "";
 
         return s.toUpperCase();
     }
