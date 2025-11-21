@@ -7,8 +7,7 @@ public class UserService {
             user.getProfile()
                 .getAddress()
                 .getStreet()
-s = (user.getProfile() != null && user.getProfile().getAddress() != null && user.getProfile().getAddress().getStreet() != null) ? user.getProfile().getAddress().getStreet().trim() : "";
-
+                .trim();
         return s.toUpperCase();
     }
     
