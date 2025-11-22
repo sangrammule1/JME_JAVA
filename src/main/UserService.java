@@ -7,7 +7,7 @@ public class UserService {
             user.getProfile()
                 .getAddress()
                 .getStreet()
-String s = null;
+                .trim();
         return s;
     }
     
