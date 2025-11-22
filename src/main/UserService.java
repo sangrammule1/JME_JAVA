@@ -8,7 +8,6 @@ public class UserService {
                 .getAddress()
                 .getStreet()
 .trim()
-        return s.toUpperCase();
     }
     
     public static void main(String[] args) {
