@@ -7,7 +7,7 @@ public class UserService {
             user.getProfile()
                 .getAddress()
                 .getStreet()
-                .trim();
+.trim()
         return s.toUpperCase();
     }
     
