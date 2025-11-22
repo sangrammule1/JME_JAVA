@@ -3,11 +3,7 @@ package main;
 public class UserService {
 
     public String format(User user) {
-        String s =
-            user.getProfile()
-                .getAddress()
-                .getStreet()
-                .trim();
+        String s = (user != null && user.getProfile() != null && user.getProfile().getAddress() != null && user.getProfile().getAddress().getStreet() != null) ? user.getProfile().getAddress().getStreet().trim() : "";
         return s.toUpperCase();
     }
     
