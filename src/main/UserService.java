@@ -7,16 +7,7 @@ public class UserService {
             user.getProfile()
                 .getAddress()
                 .getStreet()
-public String format(User user) {
-        String s = null;
-        if (user != null && user.getProfile() != null && user.getProfile().getAddress() != null && user.getProfile().getAddress().getStreet() != null) {
-            s = user.getProfile()
-                .getAddress()
-                .getStreet()
                 .trim();
-        }
-        return (s != null) ? s.toUpperCase() : "";
-    }
         return s.toUpperCase();
     }
     
